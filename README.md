@@ -26,6 +26,7 @@ Essas Perguntas/Respostas tem o intuito de ser uma base para entrevistas e candi
   
 
 1.`O que é SQL injection?`<br/>
+R: SQL Injection é uma vulnerabilidade de segurança, que consisten no invasor injetar ou manipular consultas SQL ao banco de dados relacional. Podendo causar consequências irreversíveis, com acesso dados sigilosos do sistema.
 
 2.`O que é escopo em JavaScript?`<br/>
 
