@@ -29,6 +29,7 @@ Essas Perguntas/Respostas tem o intuito de ser uma base para entrevistas e candi
 R: SQL Injection é uma vulnerabilidade de segurança, que consisten no invasor injetar ou manipular consultas SQL ao banco de dados relacional. Podendo causar consequências irreversíveis, com acesso dados sigilosos do sistema.
 
 2.`O que é escopo em JavaScript?`<br/>
+R: Escopo em Javascript é a acessibilidade de variaveis, objetos e funções em detereminada parte do código.
 
 3.`Explique o CSS “box model” e os componentes de layout que o compõem.`<br/>
 
