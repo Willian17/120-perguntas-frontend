@@ -7,6 +7,8 @@
 
 ⬛ por Ruben Paschoarelli
 
+⬛ Respondido por Willian
+
   <br/><br/>
 
 `
@@ -55,24 +57,60 @@ R: É um ataque de injeção de client-side script (código malicioso) que se ap
 7.`O que é Flux?`<br/>
 R: É uma arquitetura de fluxo de dados usada pelo Facebook em conjunto com o framework React que propõe construir aplicações web no client-side que trabalha de forma reativa. Basicamente uma forma de fluxo unidirecional de dados entre eventos e ouvintes. Dividio em 4 partes: Views, Actions, Dispatcher e Stores
 <ul>
-<li>Views: A interface do usuário, renderiza e cuida das interações com o usuário, de onde partirá os callbacks para criar as actions </li>
+  <li> <strong>Views</strong>: A interface do usuário, renderiza e cuida das interações com o usuário, de onde partirá os callbacks para criar as actions </li>
+  <li> <strong>Actions</strong>: Eventos que passam dados para o dispatcher </li>
+  <li> <strong>Dispatcher</strong>: Recebe os dados e envia para todos os stores registrado para ouvir aquela action </li>
+  <li> <strong>Stores</strong>: Recebe as actions contendo os dados e emite eventos, eventos estes que irão atualizar os dados dos states, fazendo com que as views sejam renderizadas novamente </li>
 </ul>
 
+![image](https://user-images.githubusercontent.com/53010824/153788324-a2ccd688-1552-4bf1-a829-50efb8dc6dbf.png)
+
+
 8.`O que é Sass?`<br/>
+R: É uma linguagem de extensão do CSS, a sua ideia é adicionar recursos especiais como variáveis, mixins, funções, nested selectors. Tem o objetivo tornar o desenvolvimento mais simples e eficiente.
 
 9.`O que é encapsulamento?`<br/>
+R: Na programação orientada a objetos, o encapsulamento se refere à restrição do acesso direto aos atributos de um objeto.
+```
+  private String nome; 
+  
+  public String GetNome(){
+    return nome;
+  }
+  public void SetNome(String nome){
+    this.nome = nome;
+  }
+```
 
 10.`Qual o ponto de se usar Redux?`<br/>
+R: Com o redux é criado um state global, e todos os componentes tem acesso a esse state, isso elimina a necessidade de passar continuamente o state de um componente para outro.
 
 11.`Explique a diferença de null e undefined em JavaScript`<br/> 
+R: Null é um valor primitivo que representa a ausência intencional de um valor, ja o undefined é um valor primitivo utilizado quando não se teve valor atribuído previamente.
 
 12.`Liste as vantagens da arquitetura de microsserviços`<br/> 
+<ul>
+  <li>Facilidade e rapidez na atualização e implantação dos serviços</li>
+  <li>Aumentar a flexibilidade da infraestrutura</li>
+  <li>Escalabilidade</li>
+  <li>Estandardização de serviços</li>
+  <li>Redução de dívida técnica</li>
+  <li>Desenvolvimento de práticas de DevOps e de colaboração do time</li>
+</ul>
 
 13.`Quais são as vantagens do NoSQL sobre o RDBMS tradicional?`<br/>
+<ul>
+  <li>Escalabilidade</li>
+  <li>Grande volume de Dados</li>
+  <li>Flexibilidade no formato de dados</li>
+  <li>Menor custo</li>
+</ul>
 
 14.`O que é programação reativa?`<br/>
+R: É um paradigma de programação declarativo preocupado com os fluxos de dados e a propagação de mudança como o framework React.
 
 15.`O que são os reducers no Redux?`<br/>
+R: É encarregado de lidar com todas as ações e especificam como o estado da aplicação irá mudar de acordo com o action enviado para o store.
 
 16.`Qual o papel do HTML na indexação de páginas por buscadores?`<br/>
 
