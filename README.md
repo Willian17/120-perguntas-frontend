@@ -32,14 +32,31 @@ R: SQL Injection é uma vulnerabilidade de segurança, que consisten no invasor 
 R: Escopo em Javascript é a acessibilidade de variaveis, objetos e funções em detereminada parte do código.
 
 3.`Explique o CSS “box model” e os componentes de layout que o compõem.`<br/>
+R: Em uma página Web, cada elemento é representado como um <string>box</strong> retangular. Determinar o tamanho, propriedades - como cor, fundo, estilo das bordas - e a posição desses boxes é o objetivo do mecanismo de renderização. Cada box possui 4 edges: margin, border, padding e content.
 
 4.`Como JavaScript e jQuery são diferentes?`<br/>
+R: Javascript é uma linguagem de programação, jQuery é uma biblioteca do Javascript focada na manipulação de elementos do DOM.
 
 5.`O que é é um Callback Hell?`<br/>
+R: Callback Hell é quando se tem várias callbacks dentro de outras callbacks, é um grande problema causado pela codificação com retornos aninhados complexos. Desta forma, a estrutura do código parece uma pirâmide, dificultando a leitura e manutenção. <br/>
+```
+getData(function(x){
+    getMoreData(x, function(y){
+        getMoreData(y, function(z){ 
+            ...
+        });
+    });
+});
+```
 
 6.`O que é Cross-Site Scripting (XSS)?`<br/>
+R: É um ataque de injeção de client-side script (código malicioso) que se aproveita de brechas em aplicações web para se apropriar de dados no navegador.
 
 7.`O que é Flux?`<br/>
+R: É uma arquitetura de fluxo de dados usada pelo Facebook em conjunto com o framework React que propõe construir aplicações web no client-side que trabalha de forma reativa. Basicamente uma forma de fluxo unidirecional de dados entre eventos e ouvintes. Dividio em 4 partes: Views, Actions, Dispatcher e Stores
+<ul>
+<li>Views: A interface do usuário, renderiza e cuida das interações com o usuário, de onde partirá os callbacks para criar as actions </li>
+</ul>
 
 8.`O que é Sass?`<br/>
 
