@@ -113,30 +113,54 @@ R: É um paradigma de programação declarativo preocupado com os fluxos de dado
 R: É encarregado de lidar com todas as ações e especificam como o estado da aplicação irá mudar de acordo com o action enviado para o store.
 
 16.`Qual o papel do HTML na indexação de páginas por buscadores?`<br/>
+R: Na indexação, se busca as páginas para o índice do motor de busca, motando o Pagerank, um ranking baseado numa fórmula desenvolvida pelo Google que considera também uma série de informações sobre o website para classificá-lo com uma pontuação de 0 a 10. O papel do HTML é muito influente nesse caso, quando mais semântico e bem escrito, melhor é o Pagerank, como os títulos das páginas, meta tags, heading tags, atributo alt em imagens e etc.
 
 17.`Cite 3 conceitos da Programação Orientada a Objetos aplicada ao JavaScript`<br/> 
+R: Classe, herança e encapsulamento.
 
 18.`Quais os beneficios do TypeScript?`<br/>
+R: Adiciona tipagem estática a linguagem JavaScript, possibilita que a IDE incremente o IntelliSense, Utilizar funcionalidades do Javascript que ainda não estão disponíveis de forma nativa, transpilar o código para que o mesmo seja lido por todas as versões do browsers.
 
 19.`O que é uma interface no TypeScript?`<br/>
+R: Uma interface é um conjunto de métodos e propriedades que descrevem o objeto, porém não incializa nem os implementa. Uma classe ou estrutura irá utilizar essa interface, sendo obrigada a implementar todos os seus membros.
 
 20.`Qual o significado de Mock?`<br/>
+R: São objetos que simulam o comportamento de objetos reais de forma controlada, são normalmentre criados para testar o comportamento de outros objetos reais.
 
 21.`O que é o esquema do GraphQL?`<br/>
+R: É composto por tipos de objetos que definem os objeto que podem ser solicitados e quais campos eles terão. Conforme a consulta são recebidas, o GraphQL as valida de acordo com o esquema. Em seguida executa as consultas validadas.
 
 22.`O que é o Virtual DOM? Qual sua vantagem?`<br/>
+R: Virtual DOM (VDOM) é uma representação do DOM mantida em memória. Assim quando precisamos fazer uma alteração, ela é feita no Virtual DOM, que é bem mais simples mais rápido que o DOM. Com isso ele analisa todos os lugares que serão afetados e sincroniza com o DOM em um processo chamado Reconciliação.
 
 23.`O que é e como usar a convenção Block Element Modifier (BEM)?`<br/>
+R: É um padrão do CSS para dar nomes a classes no css, para ter melhor relação entre HTML e o CSS. Onde 2 uderlines (__) são os elementos do bloco, será uma parte, complemento da estrutura do bloco, e 2 traços (--) são os modificadores do bloco, os estados que os bloco ou elemento poderão ter.
 
-24.`JavaScript: Explique como você pode usar funções JavaScript, como forEach, Map ou Reduce.`
+```
+<ul class="list">
+  <li class="list__item">
+    <h2 class="list__item__title list__item--active">My publication</h2>
+  </li>
+</ul>
+```
+
+
+
+24.`JavaScript: Explique como você pode usar funções JavaScript, como forEach, Map, Filter e Reduce.`
+R: forEach serve para percorrer um array, o Map para transformar/alterar items do array e no final retorna um novo array, O Filter filtra os elementos de acordo com a condição e retorna um array filtrado, o Reduce reduz de um array para um único elemento.
+
 
 25.`React: O que é e como você pode aproveitar as vantagens do PureComponent?`<br/>
+R: O PureComponent faz uma comparação superficial na mudança de estado, ao comparar valores escalares, ele compara seus valores, mas ao comparar objetos compara apenas a referência, isso ajuda a melhorar o desempenho da aplicação. Estado/adereços deve ser um objeto imutável, não devem ter uma hierarquia e deve ligar o forceUpdate quando os dados forem alterados.
 
 26.`O que é serverless computing?`<br/>
+R: Uma evolução do cloud computing, é um modelo de execução de computação em nuvem no qual o provedor de nivem aloca recursos da máquina sob demanda. O Serverless elimina uma camada operacional de servidores que estão sempre ligados e aloca recursos deles na nuvem.
 
 27.`Quais são os tipos primitivos do JavaScript?`<br/>
+R: String, Number, Boolean, Null, undefined, Symbol (ECMA 6)
 
 28.`Qual a diferença entre inline and inline-block?`<br/>
+R: O Inline ocuparão somente o espaço necessário para sua exibição, não será possível adicionar padding, margin, nem alterar o height e width, já o inline-block aceitam que seja definido os respectivos atributos css.
 
 29.`Qual a diferença entre elementos posicionados como relative, fixed, absolute e static?`<br/>
 
