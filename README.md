@@ -163,22 +163,38 @@ R: String, Number, Boolean, Null, undefined, Symbol (ECMA 6)
 R: O Inline ocuparão somente o espaço necessário para sua exibição, não será possível adicionar padding, margin, nem alterar o height e width, já o inline-block aceitam que seja definido os respectivos atributos css.
 
 29.`Qual a diferença entre elementos posicionados como relative, fixed, absolute e static?`<br/>
+R: 
+<ul>
+  <li><strong>Position Fixed:</strong> Irá fixar a posição do elemento na coordenada que você definir, independente se a página for rolada continuara sendo exibida.</li>
+  <li><strong>Position Relative:</strong> Posiciona o elemento em relação a si mesmo</li>
+  <li><strong>Position Absolute:</strong> Posiciona o elemento a partir dos elementos pai</li>
+  <li><strong>Position Static:</strong> Valor padrão para os elementos, significa que vai seguir o fluxo da página normalmente</li>
+</ul>
+
+
 
 30.`Você pode explicar a diferença entre codificar um site para ser responsivo e usar uma estratégia mobile-first?`<br/><br/> 
-
-  
-  
+R: Um site responsivo é que se adpta a qualquer dispositivo que o site for aberto, no modelo mobile-first é implementar pensando primeiramente na versão mobile.
   
 
 ## Pleno
 
-  
 
 1`.Mencione qual é a diferença entre PUT e POST?`<br/>
+R: PUR/POST é um método Http. POST usado para adicionar informações, o PUT para alterar.
 
 2.`O que são atributos defer e assync em uma tag <script>?`<br/>
+R: Defer assim como occore com o async, com o defer o download do script é feito de forma assíncrona, mas sua execução ocorre apenas quando todo o processo de renderização estiver concluído.
 
 3.``O que significa SOLID?  Quais são seus princípios?``<br/>
+R: SOLID São princípios e boas práticas de programação que melhore o design de software e arquitetura, seus princípios são:
+<ol>
+  <li><strong>S</strong>ingle Responsiblity: Uma classe deve ter um, e somente um, motivo para mudar.</li>
+  <li><strong>O</strong>pen-Closed: Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação</li>
+  <li><strong>L</strong>iskov Substitution: Uma classe derivada deve ser substituível por sua classe base</li>
+  <li><strong>I</strong>nterface Segregation: Uma classe não deve ser forçada a implementar interfaces e métodos que não irão utilizar</li>
+  <li><strong>D</strong>ependency Inversion: Dependa de abstrações e não de implementações</li>
+</ol>
 
 4.`O que é coerção em JavaScript?`<br/>
 
