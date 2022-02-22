@@ -197,9 +197,10 @@ R: SOLID São princípios e boas práticas de programação que melhore o design
 </ol>
 
 4.`O que é coerção em JavaScript?`<br/>
-R: É um processo de conversão de um valor de um tipo, para outro (como a conversão de string para number). Qualquer tipo , xeja primitivo ou um objeto, é um sujeito válido para coerção de tipo.
+R: É um processo de conversão de um valor de um tipo, para outro (como a conversão de string para number). Qualquer tipo , seja primitivo ou um objeto, é um sujeito válido para coerção de tipo.
 
-5.`SASS: O que é um Mixin e como usá-lo?`<br/>
+5.`SASS: O que é um Mixin e como usá-lo?`
+R: É basicamente um pedaço de código em forma de objeto, que podemos utilizar em qualquer componente da nossa aplicação. Ele pode conter as mesmas funcionalidades de um componente, como data, methods e os gatilhos de created e mounted. Através do Mixin conseguimos reutilizar códigos com diversos componentes.
 
 6.`Cite alguns sistemas de grid CSS`<br/>
 
