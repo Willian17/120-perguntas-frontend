@@ -218,54 +218,84 @@ header {
 ```
 
 6.`Cite alguns sistemas de grid CSS`<br/>
+R: grid-template-columns, grid-template-rows, grid-template-areas, grid-template, grid-auto-columns, grid-auto-columns.
 
 7.`Quando devo usar as Arrow functions no ES6?`<br/>
+R: Para funções que não sejam métodos, Em funções mais curtas, e quando não precisar usar o contexto(this, arguments, super, new.target).
 
 8.`Quando devemos usar generators no ES6?`<br/>
+R: Quando queremos uma função que pode ser executada, pausada e continuada em diferentes estágios da sua execução. Criar de maneira mais fácil iteradores e controlar o código assíncrono.
 
 9.`Cite algumas características de sistemas reativos`<br/>
+R: Flexíveis, desaclopados e escaláveis.
 
 10.`Descreva a diferença entre a programação reativa e a programação imperativa`<br/>
+R: Programação reativa reage a eventos disparados por interações do usuário ou situações comuns. Já a programação imperativa é mais autoritária, diz como e o quê exatamente um programa ou rotina deve realizar.
 
 11.`Qual é a diferença entre Promises e Observables?`<br/>
+R: Promisse processa um único evento quando uma operação assíncrona é concluída ou falha, já o Observable permite passar 0 ou mais eventos onde o callback é chamada a cada evento.
 
 12.`Como acessar a store redux fora de um componente react?`<br/>
+R: Exportar o store, e importar no client com store.getState().
 
 13.`Quais são as desvantagens do Redux em relação ao Flux?`<br/>
+R: Flux é independente em relação a mutação de dados, já o Redux, não é projetado para mutações. Flux permite fazer verificações por tipo estático, enquanto o Redux ainda não possui esse suporte.
 
 14.`Qual a maneira correta de acessar a Redux store?`<br/>
+R: Criar um provider envolvendo o component global, use o connect dentro do component global, e acesse a partir do this.props de cada component.
+```
+export default connect(mapStateToProps)(App);
+```
 
 15.`O que é "git cherry-pick"?`<br/>
+R: O git cherry-pick é um podereso comando que permite que commits de Git arbitrários sejam coletados como referência e anexados ao HEAD de trabalho atual. Por exemplo, digamos que o commit seja feito sem querer na branch errada, é possível alterar para a branch correta e fazer cherry-pick do commit para onde devia pertencer.
 
 16.`O que é um WebWorker?`<br/>
+R: São mecanismos que permitem que uma operação de um dado script seja executado em uma thread diferente da thread principal da aplicação web. Permitindo que cálculos laboriosos sejam processados sem que ocorra bloqueio da thread principal.
 
 17.`O que é o DOM?`<br/>
+R: Document Object Model é utilizado pelo navegador web para representar uma página web.
 
 18.`Qual a diferença de localStorage e sessionStorage?`<br/>
+R: localStorage os dados não expiram, já os dados do sessionStorage tem seus dados limpos ao expirar a sessão da página.
 
 19.`Como evitar callback hells?`<br/>
+R: É separar em funções isoladas, guardar em uma variavel e usar como callback.
 
 20.`O que é Injeção de Dependencia?`<br/>
+R: É um padrão de projeto usado para evitar o alto nível de aclopamento. Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações.
 
 21.`O que é a keyword "new" em JavaScript?`<br/>
+R: Permite que crie uma instância de um objeto.
 
-22.`Explique o conceito de Server Side Rendering.Cite algum framework com esse proposito`<br/>
+22.`Explique o conceito de Server Side Rendering. Cite algum framework com esse proposito`<br/>
+R: SSR é deixar de renderizar no client-side para ser rendereizado como estático do lado do servidor. Usado pelo framework NextJS.
 
 23.`O que são Estrutura de dados e porque elas são importantes?`<br/>
+R: É a organização de dados para atender aos diferentes requisitos de processamento. Existem as Listas, Árvores, grafos e Tabelas Hash.
 
 24.`O que é renderização progressiva?`<br/>
+R: Melhora o desempenho da página buscando e renderizando os componentes de maneira paralela e priorizada.
 
 25.`Para que servem os data-attributes?`<br/>
+R: Permite armazenar informações extras em elementos HTML padrões e semânticos, sem a necessidade de hacks como classList, atributos fora do padrão, propriedades extras no DOM ou método depreciado setUserData.
 
-26.`Explique a diferença entre funções sincronas e assíncronas.`
+26.`Explique a diferença entre funções sincronas e assíncronas.`<br/>
+R: Síncrona refere-se ao contato imediato entre o emissor e o receptor, a comunicação assíncrona é atemporal. Ou seja, o emissor envia a mensagem mas não necessariamente o receptor irá recebê-la imediatamente.
 
 27.`Qual a diferença entre os métodos setTimeout e setInterval?`<br/>
+R: setTimeout executa um bloco de código uma vez depois de um determinado tempo, já o setInterval executa o bloco repetidamente com um intervalo fixo entre cada chamada.
 
 28.`O que é um construtor?`<br/>
+R: É chamado assim que uma nova instância de objeto for criada.
 
 29.`Qual a função dos prototypes no JavaScript?`<br/>
+R: É um objeto implícito que está disponível para todas as funções construtoras do javascript, é um atributo da função Object, de onde as funções herdam.
 
-30.`O que são High Order Functions`<br/><br/> 
+30.`O que são High Order Functions`<br/>
+R: São funções que recebem uma ou mais funções como argumento, e depois executar essa função passada ou até retorná-la para ser executada posteriomente, mais conhechido também como funções de callback, como o map(), filter(), reducer().
+
+<br/> 
 
 
 
