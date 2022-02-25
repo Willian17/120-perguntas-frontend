@@ -301,12 +301,28 @@ R: São funções que recebem uma ou mais funções como argumento, e depois exe
 
 ## Senior
 1.`O que é  "closure" no javascript? Cite um exemplo?`<br/>
+R: Uma closure trata-se uma função que tem acesso a variaveis de sua função parente
+```
+function start() {
+    var message = "hello world";
 
-2.`Imperativo vs Funcional vs Programação Reativa.Explique`<br/>
+    function display() {
+        console.log(message);
+    }
+
+    display();
+}
+start() // hello world
+```
+
+2.`Imperativo vs Funcional vs Programação Reativa. Explique`<br/>
+R: Imperativo descreve exatamente como um programa ou rontina deve funcionar, controlando totalmente o estado do programa, A funcional usa a composição de funções puras evitando o compartilhamento de estados, dados mutáveis e efeitos colaterais, Programação reativa reage a eventos disparado pelo usuário ou situações comums do programa.
 
 3.`Você pode explicar o que “git reset” faz ?`<br/>
+R: Desfazer alterações locais no estado de um repositório git, gerenciando o estado interno do git como a árvore de commits(HEAD), o índice de staging e o diretório de trabalho.
 
 4.`Qual a diferença de Interface e Type no TypeScript?`<br/>
+R: Usar type é como se criasse um apelido para tipos primitivos. Interface para descrever uma forma de dados.
 
 5.`O que é teste de unidade, teste de integração e quais são as diferenças entre eles?`<br/>
 
