@@ -325,10 +325,16 @@ R: Desfazer alterações locais no estado de um repositório git, gerenciando o 
 R: Usar type é como se criasse um apelido para tipos primitivos. Interface para descrever uma forma de dados.
 
 5.`O que é teste de unidade, teste de integração e quais são as diferenças entre eles?`<br/>
+R: Teste de unidade é quando os módulos são testados individualmente, no de integração os módulos são combinados e testado em grupo.
 
 6.`O que é uma arvore de busca binária?`<br/>
+R: Uma árvore de busca binária é uma estrutura de dados baseada em nós, onde todos os nós da subárvore esquerda possuem valor numérico inferior ao nó raiz, e todos os nós da subárvore direita possuem um valor superior ao nó raiz.
+
+![image](https://user-images.githubusercontent.com/53010824/155825371-9fa09778-c0f8-4f03-a822-800e8a9d6393.png)
+
 
 7.`O que é o Shadow DOM e qual seu uso?`<br/>
+R: É a que consiste em um subconjunto de nós do DOM com escopo próprio, quer dizer que o HTML, CSS e JS serão isolados do resto dos nós irmãos.
 
 8.`Qual a diferença entre os métodos apply.call e bind?`<br/>
 
