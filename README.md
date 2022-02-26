@@ -437,7 +437,7 @@ R:
 <ul> 
   <li>Linaria: Estilo baseado em prop dinâmico, CSS SourceMap, Linting CSS, porém dificil de implementar e configurar o bundler.</li> 
   <li>Astroturf: Flexibilidade, Suporte de adereços porém Documentação deficiente, dificil implementação. </li>
-<ul>
+</ul>
 
 
 28.`Dê exemplos de Convenções de código de JavaScript`  <br/>
