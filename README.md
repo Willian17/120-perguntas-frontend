@@ -336,9 +336,34 @@ R: Uma árvore de busca binária é uma estrutura de dados baseada em nós, onde
 7.`O que é o Shadow DOM e qual seu uso?`<br/>
 R: É a que consiste em um subconjunto de nós do DOM com escopo próprio, quer dizer que o HTML, CSS e JS serão isolados do resto dos nós irmãos.
 
-8.`Qual a diferença entre os métodos apply.call e bind?`<br/>
+8.`Qual a diferença entre os métodos apply, call e bind?`<br/>
+R: São todas funcões que tem o objetivo de executar uma função passando por ela diferente contexto e argumentos
+<ul>
+  <li> call: contexto, param1, param2, param3 </li>
+  <li> apply: contexto, [param1, param2, param3] </li>
+  <li> bind: contexto, param1, param2, param3. Porém cria uma instância da função, retornando ela </li>
+</ul>
+
+```
+const pessoa = {
+    idade: 15,
+    apresentar: function(nome) {
+        console.log(`Olá, meu nome é ${nome} e tenho ${this.idade} anos.`)
+    }
+}
+
+pessoa2 = {
+    idade: 18
+}
+
+pessoa.apresentar('Willian') // Olá, meu nome é Willian e tenho 15 anos.
+pessoa.apresentar.call(pessoa2, 'Willian Call') // Olá, meu nome é Willian Call e tenho 18 anos.
+pessoa.apresentar.apply(pessoa2, ['Willian Apply']) // Olá, meu nome é Willian Apply e tenho 18 anos.
+pessoa.apresentar.bind(pessoa2, 'Willian Bind')() // Olá, meu nome é Willian Bind e tenho 18 anos.
+```
 
 9.`O que descreve o algoritmo de Big O Notation?`<br/>
+R: É usada para classificar algoritmos em relação as mudanças de desempenho quanto ao tamanho da entrada. É um método de descrever o comportamento de limites, matematicmente falando.
 
 10.`O que é o conceito de Immutabilidade?`<br/>
 
