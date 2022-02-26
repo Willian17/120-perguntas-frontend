@@ -363,43 +363,82 @@ pessoa.apresentar.bind(pessoa2, 'Willian Bind')() // Olá, meu nome é Willian B
 ```
 
 9.`O que descreve o algoritmo de Big O Notation?`<br/>
-R: É usada para classificar algoritmos em relação as mudanças de desempenho quanto ao tamanho da entrada. É um método de descrever o comportamento de limites, matematicmente falando.
+R: É usada para classificar algoritmos em relação as mudanças de desempenho quanto ao tamanho da entrada. É um método de descrever o comportamento de limites, matematicamente falando.
 
-10.`O que é o conceito de Immutabilidade?`<br/>
+![image](https://user-images.githubusercontent.com/53010824/155853867-d748912a-fb9b-40c2-b024-80238ff46cd4.png)
+
+10.`O que é o conceito de Imutabilidade?`<br/>
+R: É algo que não pode ser alterado.
 
 11.`Quais são boas práticas de Clean Code?`<br/>
+<ol> 
+  <li>Nomes são muito importantes: Variaveis, funções, parâmetro, classe bem descritivos</li>
+  <li>Regra do escoteiro: Deixar o código mais limpo do que quando você encontrou</li>
+  <li>Seja o verdadeiro autor do código: Funções simples, claras e pequenas</li>
+  <li>DRY: Não repetir código</li>
+  <li>Comente apenas o necessário</li>
+  <li>Tratamento de erros: As coisas podem dar errado mas deve continar fazendo o que precisa.</li>
+  <li>Teste limpos: Testes rápido, independente, repetido em diversos ambientes, testar todas as condições. </li>
+</ol>
 
 12.`O que é o "HEAD" no Git?`<br/>
+R: Significa a "branch atual".
 
 13.`Quais são as diferenças entre continuous integration, continuous delivery e continuous deployment?`<br/>
+R: CI (Continuous integration) é uma abordagem para testar cada mudança de código automaticamente, enquanto CD(Continuos Delivery) é uma abordagem para obter mudanças de novos recursos, configurações e correções de bugs. E o Continuous deployment é uma abordagem para validar se estão corretas e estáveis para o ambiente de produção.
+
+![image](https://user-images.githubusercontent.com/53010824/155854360-aec13b08-9006-41c8-8a8d-8867d8aa81e3.png)
+
 
 14.`Explique um caso de uso do  Docker`<br/>
+R: Uma vez que a aplicação seja transformada em uma imagem Docker, ela pode ser instanciada como container em qualquer ambiente que desejar. Isso significa que poderá utilizar sua aplicação no notebook do desenvolvedor da mesma forma que é executada no servidor de produção.
 
 15.`O que é o React Hooks?`<br/>
+R: Hooks são funcões que permitem ligar-se aos recursos do state e ciclo de vida do React a partir de componentes funcionais.
 
 16.`Como você abordaria a correção de problemas de estilo específicos do navegador?`<br/>
+R: Propriedades como -moz, -ms, -o, -webkit no css para colocar compatibilidade no navegador
 
 17.`Angular: O que são lifecycle hooks para componentes e diretivas?`<br/>
+R: Todo componente no angular tem um conjunto de eventos de ciclo de vida(lifecycle hooks) que ocorrem quando um componente é criado, renderizado, tem o valor de suas propriedades alterados ou é destruido. O Angular invoca uma séries de métodos(hooks) como o ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked,  ngAfterViewInit, ngAfterViewChecked, ngOnDestroy.
 
 18.`Explique o conceito de Lazy Loading`<br/>
+R: É uma técnica de otimização de desempenho de páginas que tem como objetivo fazer com que conteúdos mais pesados sejam carregados de forma assíncrona ou condicional.
 
 19.`Quando se usar uma classe abstrata?`<br/>
+R: Quando todas as classes de uma hierarquia podem ser instanciadas, Hierarquia não tão estreitamente relacionados e especificar um comportamento de algo e não o tipo deste.
 
 20.`Explique o conceito de encapsulamento de dados`<br/>
+R: Significa evitar que sofram acessos indevidos. Onde contém métodos para gerenciar esses dados.
 
 21.`React: O que são fragments?`<br/>
+R: Permite agrupar uma lista de filhos sem adicionar nós extras ao DOM.
 
 22.`Porque você criaria classes estáticas?`<br/>
+R: Usadas no caso de não houver comportamento ou dados na classe que depende da identidade do objeto, para manter métodos não associados com um objeto específico.
 
 23.`Explique o CORS e como isso pode afetar um website.`<br/>
+R: Significa Cross-origin Resource Sharing (ou Compartilhamento de Recursos de Origem Cruzada) é um mecanismo utilizado pelos navegadores para compartilhar recursos entre diferentes origens. O CORS é uma especificação do W3C e fez uso de headers HTTP para informar aos navegadores se determinado recurso pode ou não ser usado.
 
 24.`Cite algumas vulnerabilidades de REST APIS`<br/>
+R: Injeção de código, ataques de solicitação de replay, ataques de falsificação, autenticação de usuário quebrada.
 
 25.`O que é JWT? Como implementar? Quais são as alternativas?`<br/>
+R: JWT (JSON Web Tokens) é um método RTC 7519 padrão da indústria para realizar autenticação entre duas partes por meio de um token assinado que autentica uma requisição. Gerar um token assinado, e quando receber de volta no header da requisição verificar se o token é válido. As alternativas são: OAuth2, Fernet, Branca e PASETO.
+
+![image](https://user-images.githubusercontent.com/53010824/155856558-fbb21a17-fb41-4431-886f-d6e4a3c6ab66.png)
 
 26.`O que é Styled Components? Cite Alternativas`<br/>
+R: É uma biblioteca que utliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. As alternativas são: Linaria, Css Blocks, Stitches,  Styletron, Emotion, Fela, Goober.
 
 27.`Dê exemplos de bibliotecas CSS in JS e suas vantagens e desvantagens`<br/>
+R: 
+
+<ul> 
+  <li>Linaria: Estilo baseado em prop dinâmico, CSS SourceMap, Linting CSS, porém dificil de implementar e configurar o bundler.</li> 
+  <li>Astroturf: Flexibilidade, Suporte de adereços porém Documentação deficiente, dificil implementação. </li>
+<ul>
+
 
 28.`Dê exemplos de Convenções de código de JavaScript`  <br/>
 
