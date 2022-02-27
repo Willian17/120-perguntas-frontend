@@ -441,15 +441,33 @@ R:
 
 
 28.`Dê exemplos de Convenções de código de JavaScript`  <br/>
+R: As Variáveis e funções devem ter o nome em camelCase, espaço em torno de operadores, sempre usar 4 espaços de recuo de bloco de código. 
 
 29.`Quais as vantagens e desvantagens de programação funcional vs orientada a objetos?`<br/>
+![image](https://user-images.githubusercontent.com/53010824/155866729-61aca6fc-06be-496b-83f5-5fb85657a42c.png) 
 
-30.`O que é o  two-way data binding e o one-way data flow, e qual sua diferença?` <br/>   <br/> 
+30.`O que é o  two-way data binding e o one-way data flow, e qual sua diferença?` <br/> 
+R: Two-way data binding é bidirecional vincula os dois lados: o model e a view, significa que quando um muda, o outro também muda e obtém o mesmo valor. Já o one-way data flow é unidirecional, a view vai sempre obter o estado a partir do model, para atualizar a view deverá primeiro mudar o model e, em seguida redesenhar a view.
+
+<br/> 
 
 
 ## Expert
 
 1.`Cite algumas práticas recomendadas para um melhor design de API RESTful`<br/> 
+<ol> 
+  <li>Um Recurso deve ser um substantivo e não um verbo </li>
+  <li> Documentar API </li>
+  <li> Sempre utilize JSON  </li>
+  <li> Padronizar a entrada de dados </li>
+  <li> Usar HTTPS </li>
+  <li> Utilizar Query Params em filtros</li>
+  <li> Cache e Autenticação </li>
+  <li> Use logs </li>
+  <li> Tenha métricas da API </li>
+  <li> Mensagens de erros descritivas </li>
+ 
+</ol>
 
 2.`Programação Reativa: Explique Message-Driven vs Event-Driven`<br/> 
 
