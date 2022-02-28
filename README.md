@@ -527,28 +527,84 @@ R: O motor V8 usa a compilação Just in Time (JIT), inicialmente usa um interpr
 
 17.`O que é WCAG? Quais as diferenças de compliance A, AA, and AAA?`<br/> 
 R: O critérios do WCAG visam tornar o conteúdo mais acessível a um público mais amplo de pessoas com deficiência.
+<ul> 
+  <li> Nível A: estão critério simples que representam apenas barreiras mais significativas de acessibilidade./li>
+  <li> Nível AA: apresenta para a maior parte dos usuários garantindo acesso à grande maioria dos conteúdos./li>
+  <li> Nível AAA: refinamento das anteriores sendo especificações mais detalhadas e que trazem de um nível mais sofisticado de acessibilidade/li>
+</ul>
 
 18.`O que é CSS BEM? Cite outros exemplos de Arquitetura CSS`<br/> 
+R: É um padrão do CSS para dar nomes a classes no css, para ter melhor relação entre HTML e o CSS. É um acrônimo para Bloco, Elemento e Modificador, assim como existe o OOCSS (CSS orientado a objetos) e RSCSS (Sistema razoável para estrutura CSS).
 
-19.`Quais os prós e contras de arquiteturas monolíticas vs microserviços?`<br/> 
+19.`Quais os prós e contras de arquiteturas monolítica e microsserviços?`<br/> 
+R: Monolítica é mais simples de desenvolver, testar e deploy para o servidor, além de ser simples de escalar. Porém é mais difícil a manutenção, fazer alterações, e mais chances de acontecer bugs. <br> Já os microsserviços é independentemente desenvolvido e escalável, pode ser reutulizado em múltiplas aplicações. Porém é mais complexo de se implementar,  e no gerenciamento da aplicação, será necessário ser padronizado para todo o projeto.
 
 20.`Qual o problema com o nesting do Sass? De algum exemplo.`<br/> 
+R: Geração de códigos inútil, aumentando o tamanho do arquivo final e principalmente a quebra de especificidade e a herança do código CSS.
+```
+  main {  
+   .one {  
+     .two {  
+       a {
+         color: red
+       }  
+     }
+   }  
+  }
+```
 
 21.`Fale as principais diferenças entre UX e UI Design`<br/> 
+R: UI Design tem como foco principal foco a interface de um determinado aplicação, como o usuário interage. Já o UX Design cuida da experiência do usuário, o sentimento do usuário com a interação.
+
+![image](https://user-images.githubusercontent.com/53010824/156059339-199fe580-af71-4174-947b-d8d23a0239ff.png)
 
 22.`O que é caching?`<br/> 
+R: É uma camada de armazenamento físico de dados de alta velocidade que guarda um subconjunto de dados, geralmente temporário, para que futuras solicitações sejam atendidas de modo mais rápido do que é possível fazer ao acessar o local de armazenamento principal de dados.
 
 23.`Qual é o proposito do metodo OPTIONS em webservices RESTful?`<br/> 
+R: É utilizado para que um cliente possa descobrir quais as opções de requisições permitidas para um determinado recurso em um servidor.
+```
+curl -X OPTIONS http://example.org -i
+```
+
+```
+HTTP/1.1 200 OK
+Allow: OPTIONS, GET, HEAD, POST
+Cache-Control: max-age=604800
+Date: Thu, 13 Oct 2016 11:45:00 GMT
+Expires: Thu, 20 Oct 2016 11:45:00 GMT
+Server: EOS (lax004/2813)
+x-ec-custom-error: 1
+Content-Length: 0
+```
 
 24.`Quais ferramentas você usaria para encontrar um bug de performance em seu código?`<br/> 
+R: FindBugs, PMD, Kinsta APM, WebLOAD, Loadero, StormForge, Silk Performer, Gatling, Loadster, Locust.
 
 25.`Explique a diferença entre layout, painting and compositing.`<br/> 
+<ul>
+   <li>Layout: A maneira como as partes de elementos são dispostas</li>
+   <li>Paiting: É o processo de preenchimento de pixels, cores, imagens, bordas, sombras e etc, concluída em várias camadas.</li>
+   <li>Compositing: Combina todas as camadas em uma camada em ordem correta e exibe na tela. </li>
+</ul>
 
 26.`O que é domain pre-fetching e como ajuda com performance?`<br/> 
+R: É tentar resolver o DNS de quaisquer links existentes em uma página de forma antecipada, melhorando consideravelmente a perfomance.
 
 27.`O que é CDN e quais os benefícios de usar uma?`<br/> 
+R: CDN(Content Delivery Network) é uma rede de servidores que está distribuída em vários pontos do mundo, em diversos data centers localizados em pontos estratégicos, para armazenar conteúdos estáticos de sites, reduzindo a latência e agilizar a entrega destes dados ao usuário final.
 
 28.`JS: O que é Currying? Dê um exemplo de aplicação`<br/> 
+R: É o processo de transformar uma função que espera vários argumentos em uma função que espera um único argumento e retorna outra função curried.
+
+```
+function produto(a) {
+    return function(b) {
+        return a * b;
+    };
+}
+console.log(produto(2)(8)); // 16
+```
 
 29.`ES6: Async-Await x Yield/Next Generator, cite exemplos e diferenças`<br/> 
 
