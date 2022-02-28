@@ -470,36 +470,63 @@ R: Two-way data binding é bidirecional vincula os dois lados: o model e a view,
 </ol>
 
 2.`Programação Reativa: Explique Message-Driven vs Event-Driven`<br/> 
+R: No message-driven cada componente tem um endereço exclusivo para que outros componentes podem enviar. Cada um desses componentes ou destinatários, aguarda mensagens e reage a ele. Um Event é alguns dados emitido a partir de um componente para quem possa consumir. 
 
 3.`Qual o modelo mental do redux-saga?`<br/> 
+R: Uma saga é como uma thread separada da aplicação que é unicamente responsável por side effects. Redux saga é um redux middleware, que significa que essa thread possa ser estartada, pausada ou cancelada na aplicação principal.
 
 4.`Quando se usa "git rebase" ao invés de  "git merge"?`<br/> 
+R: Se preferir um histórico limpo, linear e sem commits de mesclagem desnecessários, pode usar git rebase em vez de git merge ao integrar alterações de outra ramificação.
 
 5.`O que são webcomponents?`<br/> 
+R: É uma suíte de diferentes tecnlogias que permite a criação de elementos customizados reutilizáveis e que podem ser utilizados em aplicações web.
 
 6.`O que é ARIA?`<br/> 
+R: O ARIA é um conjunto de atributos especiais de acessibilidade, que pode ser adicionado a qualquer linguagem de marcação, mas é especialmente adequado para HTML. O Atributo da função define qual é o modelo de objeto (tais como artigo, um alerta, ou algo que deslize). Há atributos adicionais ARIA que forncecem outras propriedades úteis, como o valor atual de uma barra de progresso.
+```
+<li tabindex="0" class="checkbox" role="checkbox" checked aria-checked="true">
+  Receive promotional offers
+</li>
+```
 
 7.`O que é um Hash Table?`<br/> 
+R: É uma estrutura de dados especial, que associa chaves de pesquisa a valores. Seu objetivo é, a partir de uma chave simples, fazer uma busca rápida e obter o valor desejado.
+![image](https://user-images.githubusercontent.com/53010824/155906684-278c0351-931d-4aa0-95b8-d57750b04643.png)
+
 
 8.`O que é o WebAssembly?`<br/> 
+R: WebAssembly é uma linguagem de baixo nível do tipo assembly com um formato binário compacto, que é executado com perfomance próxima a nativa, que disponibiliza linguagens com modelos de memória de baixo nível como C++ e Rust, com uma compilição-alvo, assim pode ser executado na web.
 
 9.`Angular: compliação Just-in-Time (JiT) vs Ahead-of-Time (AoT).Explique a diferença.`<br/> 
+R: No JIT, que era o padrão do angular até a versão 8, esta compilação é realizada no browser, em tempo de execução. Ou seja, quando o site é acessado, o Browser baixa os arquivos javascript ainda não compilados, baixa também o compilador do Angular, executa a compilação e, finalmente, mostra o resultado para o usuário.
+Já no modo AOT, está compilação é feita durante o build, Ou seja o browser já obtem o JavaScript pré-compilado, sem a necessasidade de compilar o código ou mesmo baixar o compilador Angular.
 
 10.`Qual a vantagem do incremental DOM  sobre o virtual DOM?`<br/> 
+R: O DOM incremental traz uma solução para reduzir o consumo no DOM virtual usando DOM real para rastrear alterações. Essa abordagem reduziu drasticamente a sobrecarga de cálculo e melhorou o uso de memória dos aplicativos.
 
 11.`OOP: Qual a diferença entre um mixin e uma herança?`<br/> 
+R: A herança faz subtipo e sublasse, o mixins só faz apenas subclasse, portanto há uma inclusão e não uma herança.
 
 12.`Como estilizar um elemento que está após o elemento selecionado?`<br/> 
+R: Usando o seletor `+`
+```
+div + p
+```
 
 13.`Explique como  'this' funciona no JavaScript`<br/> 
+R: O this faz refeência ao objeto que está chamando a função no momento. Em Javascript você pode usar this no contexto global e no contexto de função. Além disso, o comportamento do this muda entre o modo estrito e não estrito, no contexto global o this faz referência ao objeto global, que é window no navegador e global no Node.js, no modo estrito define o this como undefined.
 
 14.`Cite outros frameworks que fazem o mesmo que o React,Angular e Vue`<br/> 
+R: Petit DOM, Surplus, RE: DOM, Mithrill, Bobril, Marko, Nest, Svelte, Hapi.js, Koa e Ember.
 
 15.`Qual dos dois é mais seguro, JWT ou OAuth2?`  <br/> 
+R: São duas coisas diferentes, OAuth2 define um protocolo de autenticação, ou seja, especifica como os tokens são transferidos, Já o JWT define o formato de token.
 
 16.`Como o  V8 compila o código JavaScript?`<br/> 
+R: O motor V8 usa a compilação Just in Time (JIT), inicialmente usa um interpretador para interpretar o código. Em outras ocasiões, o motor V8 encontra padrões e os compila para melhorar o desempenho.
 
 17.`O que é WCAG? Quais as diferenças de compliance A, AA, and AAA?`<br/> 
+R: O critérios do WCAG visam tornar o conteúdo mais acessível a um público mais amplo de pessoas com deficiência.
 
 18.`O que é CSS BEM? Cite outros exemplos de Arquitetura CSS`<br/> 
 
