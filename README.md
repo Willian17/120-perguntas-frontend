@@ -154,7 +154,7 @@ R: forEach serve para percorrer um array, o Map para transformar/alterar items d
 R: O PureComponent faz uma comparação superficial na mudança de estado, ao comparar valores escalares, ele compara seus valores, mas ao comparar objetos compara apenas a referência, isso ajuda a melhorar o desempenho da aplicação. Estado/adereços deve ser um objeto imutável, não devem ter uma hierarquia e deve ligar o forceUpdate quando os dados forem alterados.
 
 26.`O que é serverless computing?`<br/>
-R: Uma evolução do cloud computing, é um modelo de execução de computação em nuvem no qual o provedor de nivem aloca recursos da máquina sob demanda. O Serverless elimina uma camada operacional de servidores que estão sempre ligados e aloca recursos deles na nuvem.
+R: Uma evolução do cloud computing, é um modelo de execução de computação em nuvem no qual o provedor de nuvem aloca recursos da máquina sob demanda. O Serverless elimina uma camada operacional de servidores que estão sempre ligados e aloca recursos deles na nuvem.
 
 27.`Quais são os tipos primitivos do JavaScript?`<br/>
 R: String, Number, Boolean, Null, undefined, Symbol (ECMA 6)
