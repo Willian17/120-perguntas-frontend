@@ -607,5 +607,26 @@ console.log(produto(2)(8)); // 16
 ```
 
 29.`ES6: Async-Await x Yield/Next Generator, cite exemplos e diferenças`<br/> 
+```
+async function testeAwait() {
+    const users = await getUsersFromDatabase();
+    return users + "Corretamente retornado";
+}
+```
+Generators são funções pausadas que podem gerar valores sob demanda, sempre que o objeto iterador solicitar o próximo valor.
+```
+function* testeGenerator() {
+    const users = yield getUsersFromDatabase();
+    return users + "Corretamente retornado";
+}
+
+const iterator = testeGenerator();
+const iteration = iterator.next();
+
+iteration.value.then(result => {
+    const nextIteration = iterator.next(result); // value: 'Test Users Corretamente retornado' done: true
+})
+```
 
 30.`JS: O que é o  "use strict";? Quais vantagens e desvantagens?` <br/> 
+R: É o modo estrito, que previne algumas ações de serem tomadas e envia mais exceções, é como se fosse uma versão mais segura e reduzida do JavaScript. Gera mais erros e desabilita alguns recursos em um esforço para tornar o código mais robusto, legível e preciso.
