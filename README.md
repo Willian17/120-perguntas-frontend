@@ -181,7 +181,7 @@ R: Um site responsivo é que se adpta a qualquer dispositivo que o site for aber
 
 
 1`.Mencione qual é a diferença entre PUT e POST?`<br/>
-R: PUR/POST é um método Http. POST usado para adicionar informações, o PUT para alterar.
+R: PUT/POST é um método Http. POST usado para criar um recurso, o PUT para alterar um recurso.
 
 2.`O que são atributos defer e assync em uma tag <script>?`<br/>
 R: Defer assim como occore com o async, com o defer o download do script é feito de forma assíncrona, mas sua execução ocorre apenas quando todo o processo de renderização estiver concluído.
