@@ -426,7 +426,7 @@ R: Injeção de código, ataques de solicitação de replay, ataques de falsific
 25.`O que é JWT? Como implementar? Quais são as alternativas?`<br/>
 R: JWT (JSON Web Tokens) é um método RTC 7519 padrão da indústria para realizar autenticação entre duas partes por meio de um token assinado que autentica uma requisição. Gerar um token assinado, e quando receber de volta no header da requisição verificar se o token é válido. As alternativas são: OAuth2, Fernet, Branca e PASETO.
 
-![image](https://user-images.githubusercontent.com/53010824/155856558-fbb21a17-fb41-4431-886f-d6e4a3c6ab66.png)
+![image](https://user-images.githubusercontent.com/53010824/156276765-5a43d0e1-82e2-43ba-8e22-d2bdf21abc8e.png)
 
 26.`O que é Styled Components? Cite Alternativas`<br/>
 R: É uma biblioteca que utliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript. As alternativas são: Linaria, Css Blocks, Stitches,  Styletron, Emotion, Fela, Goober.
@@ -528,9 +528,9 @@ R: O motor V8 usa a compilação Just in Time (JIT), inicialmente usa um interpr
 17.`O que é WCAG? Quais as diferenças de compliance A, AA, and AAA?`<br/> 
 R: O critérios do WCAG visam tornar o conteúdo mais acessível a um público mais amplo de pessoas com deficiência.
 <ul> 
-  <li> Nível A: estão critério simples que representam apenas barreiras mais significativas de acessibilidade./li>
-  <li> Nível AA: apresenta para a maior parte dos usuários garantindo acesso à grande maioria dos conteúdos./li>
-  <li> Nível AAA: refinamento das anteriores sendo especificações mais detalhadas e que trazem de um nível mais sofisticado de acessibilidade/li>
+  <li> Nível A: estão critério simples que representam apenas barreiras mais significativas de acessibilidade</li>
+  <li> Nível AA: apresenta para a maior parte dos usuários garantindo acesso à grande maioria dos conteúdos</li>
+  <li> Nível AAA: refinamento das anteriores sendo especificações mais detalhadas e que trazem de um nível mais sofisticado de acessibilidade</li>
 </ul>
 
 18.`O que é CSS BEM? Cite outros exemplos de Arquitetura CSS`<br/> 
