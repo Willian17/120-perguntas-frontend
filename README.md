@@ -107,7 +107,7 @@ R: Null é um valor primitivo que representa a ausência intencional de um valor
 </ul>
 
 14.`O que é programação reativa?`<br/>
-R: É um paradigma de programação declarativo preocupado com os fluxos de dados e a propagação de mudança como o framework React.
+R: É um paradigma de programação declarativo preocupado com os fluxos de dados e a propagação de mudança, reage a eventos disparados por interações do usuário ou situações comuns.
 
 15.`O que são os reducers no Redux?`<br/>
 R: É encarregado de lidar com todas as ações e especificam como o estado da aplicação irá mudar de acordo com o action enviado para o store.
