@@ -157,7 +157,7 @@ R: O PureComponent faz uma comparação superficial na mudança de estado, ao co
 R: Uma evolução do cloud computing, é um modelo de execução de computação em nuvem no qual o provedor de nuvem aloca recursos da máquina sob demanda. O Serverless elimina uma camada operacional de servidores que estão sempre ligados e aloca recursos deles na nuvem.
 
 27.`Quais são os tipos primitivos do JavaScript?`<br/>
-R: String, Number, Boolean, Null, undefined, Symbol (ECMA 6)
+R: String, Number, Boolean, Null, undefined, Symbol (ECMA 6), bigint (ES2020)
 
 28.`Qual a diferença entre inline and inline-block?`<br/>
 R: O Inline ocuparão somente o espaço necessário para sua exibição, não será possível adicionar padding, margin, nem alterar o height e width, já o inline-block aceitam que seja definido os respectivos atributos css.
